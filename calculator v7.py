@@ -125,30 +125,35 @@ def zero():
 def decimal():
     
     global label_text
-    delete_list = list(label_text)
-    if '.' in delete_list:
-        if delete_list.index('.') < delete_list.index('/'):
-            if not_breaking_equals == False:
-                if len(delete_list) <= 49:
-                    if len(delete_list) == 0:
-                        label_text = str(label_text + ".")
-                        output = Label(root, text=str(label_text))
-                        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-                    elif '.' != delete_list[-1]:
-                        label_text = str(label_text + ".")
-                        output = Label(root, text=str(label_text))
-                        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-    if '.' not in delete_list:
-        if not_breaking_equals == False:
-            if len(delete_list) <= 49:
-                if len(delete_list) == 0:
-                    label_text = str(label_text + ".")
-                    output = Label(root, text=str(label_text))
-                    output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-                elif '.' != delete_list[-1]:
-                    label_text = str(label_text + ".")
-                    output = Label(root, text=str(label_text))
-                    output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+    jump = 0
+    delete_list = label_text.replace('/','!')
+    delete_list = delete_list.replace('*','!')
+    delete_list = delete_list.replace('-','!')
+    delete_list = delete_list.replace('+','!')
+    delete_list = delete_list.split('!')
+    decimal_check = delete_list[len(delete_list)-1]
+    if delete_list[len(delete_list)-1] == '':
+        label_text = str(label_text + ".")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+    for x in decimal_check:
+        if x == '.':
+            error = True
+        else:
+            if '.' in delete_list[len(delete_list)-1]:
+                error = True
+            if '.' not in delete_list[len(delete_list)-1]:
+                if not_breaking_equals == False:
+                    if len(delete_list) <= 49:
+                        if len(delete_list) == 0:
+                            jump = 1
+                        elif '.' != delete_list[-1]:
+                            jump = 1
+    if jump == 1:
+        label_text = str(label_text + ".")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+
 
 
 def multiply():
@@ -204,7 +209,7 @@ def subtract():
             label_text = str(label_text + "-")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        elif delete_list[-1] != '*' and delete_list[-1] != '/' and delete_list[-1] != '.':
+        elif delete_list[-1] != '/' and delete_list[-1] != '.':
                 label_text = str(label_text + "-")
                 output = Label(root, text=str(label_text))
                 output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
