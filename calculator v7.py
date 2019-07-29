@@ -1,166 +1,284 @@
 from tkinter import *
-
+import time
 
 label_text = ''
 not_breaking_equals = False
+not_breaking_equals_2 = False
+not_breaking_delete = 1
 root = Tk()
 root.configure(bg = 'firebrick',)
-
-
-def click():
-    text = Label(text="hello there")
-    text.pack()
 
 
 def one():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "1")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "1")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def two():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "2")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "2")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def three():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "3")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "3")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def four():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "4")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "4")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def five():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "5")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "5")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def six():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "6")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "6")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def seven():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "7")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "7")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def eight():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "8")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "8")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def nine():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "9")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "9")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def zero():
     
     global label_text
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if not_breaking_equals == False:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "0")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif not_breaking_equals == False:
         if len(delete_list) <= 50:
             label_text = str(label_text + "0")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
 
 
 def decimal():
     
     global label_text
-    delete_list = list(label_text)
-    if '.' in delete_list:
-        if delete_list.index('.') < delete_list.index('/'):
-            if not_breaking_equals == False:
-                if len(delete_list) <= 49:
-                    if len(delete_list) == 0:
-                        label_text = str(label_text + ".")
-                        output = Label(root, text=str(label_text))
-                        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-                    elif '.' != delete_list[-1]:
-                        label_text = str(label_text + ".")
-                        output = Label(root, text=str(label_text))
-                        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-    if '.' not in delete_list:
-        if not_breaking_equals == False:
-            if len(delete_list) <= 49:
-                if len(delete_list) == 0:
-                    label_text = str(label_text + ".")
-                    output = Label(root, text=str(label_text))
-                    output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-                elif '.' != delete_list[-1]:
-                    label_text = str(label_text + ".")
-                    output = Label(root, text=str(label_text))
-                    output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+    global not_breaking_equals_2
+    global not_breaking_delete
+
+    jump = 0
+    delete_list = label_text.replace('/','!')
+    delete_list = delete_list.replace('*','!')
+    delete_list = delete_list.replace('-','!')
+    delete_list = delete_list.replace('+','!')
+    delete_list = delete_list.split('!')
+    decimal_check = delete_list[len(delete_list)-1]
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + ".")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    if delete_list[len(delete_list)-1] == '':
+        label_text = str(label_text + ".")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+    for x in decimal_check:
+        if x == '.':
+            error = True
+        else:
+            if '.' in delete_list[len(delete_list)-1]:
+                error = True
+            if '.' not in delete_list[len(delete_list)-1]:
+                if not_breaking_equals == False:
+                    if len(label_text) <= 49:
+                        if len(label_text) == 0:
+                            jump = 1
+                        elif '.' != label_text[-1]:
+                            jump = 1
+    if jump == 1:
+        label_text = str(label_text + ".")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
 
 
 def multiply():
     
     global label_text
     global not_breaking_equals
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if len(delete_list) <= 49 and len(delete_list) != 0:
+    if not_breaking_equals_2 == True:
+        error = True
+    elif len(delete_list) <= 49 and len(delete_list) != 0:
         if delete_list[-1] != '*' and delete_list[-1] != '/' and delete_list[-1] != '+' and delete_list[-1] != '-' and delete_list[-1] != '.':
             label_text = str(label_text + "*")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
     not_breaking_equals = False
 
 
@@ -168,12 +286,17 @@ def divide():
     
     global label_text
     global not_breaking_equals
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if len(delete_list) <= 49 and len(delete_list) != 0:
+    if not_breaking_equals_2 == True:
+        error = True
+    elif len(delete_list) <= 49 and len(delete_list) != 0:
         if delete_list[-1] != '*' and delete_list[-1] != '/' and delete_list[-1] != '+' and delete_list[-1] != '-' and delete_list[-1] != '.':
             label_text = str(label_text + "/")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
     not_breaking_equals = False
 
 
@@ -181,16 +304,27 @@ def plus():
     
     global label_text
     global not_breaking_equals
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if len(delete_list) <= 49:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "+")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete+1
+        not_breaking_equals_2 = False
+    elif len(delete_list) <= 49:
         if len(delete_list) == 0:
             label_text = str(label_text + "+")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
         elif delete_list[-1] != '*' and delete_list[-1] != '/' and delete_list[-1] != '+' and delete_list[-1] != '.' and delete_list[-1] != '-':
             label_text = str(label_text + "+")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = not_breaking_delete+1
     not_breaking_equals = False
 
 
@@ -198,16 +332,27 @@ def subtract():
     
     global label_text
     global not_breaking_equals
+    global not_breaking_equals_2
+    global not_breaking_delete
     delete_list = list(label_text)
-    if len(delete_list) <= 49:
+    if not_breaking_equals_2 == True:
+        label_text = ''
+        label_text = str(label_text + "-")
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_equals_2 = False
+        not_breaking_delete = int(not_breaking_delete)+1
+    elif len(delete_list) <= 49:
         if len(delete_list) == 0:
             label_text = str(label_text + "-")
             output = Label(root, text=str(label_text))
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        elif delete_list[-1] != '*' and delete_list[-1] != '/' and delete_list[-1] != '.':
-                label_text = str(label_text + "-")
-                output = Label(root, text=str(label_text))
-                output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = int(not_breaking_delete)+1
+        elif delete_list[-1] != '/' and delete_list[-1] != '.':
+            label_text = str(label_text + "-")
+            output = Label(root, text=str(label_text))
+            output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_delete = int(not_breaking_delete)+1
     not_breaking_equals = False
 
 
@@ -215,7 +360,10 @@ def AC():
     
     global label_text
     global not_breaking_equals
+    global not_breaking_equals_2
+    global not_breaking_delete
     label_text = str("")
+
     output = Label(root, text=str(label_text))
     output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
     not_breaking_equals = False
@@ -225,25 +373,52 @@ def equals():
     
     global label_text
     global not_breaking_equals
-    label_text= str(eval(label_text))
-    output = Label(root, text=str(label_text))
-    output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-    not_breaking_equals = True
+    global not_breaking_equals_2
+    global not_breaking_delete
+    delete_list = label_text.replace('/','!')
+    delete_list = delete_list.replace('*','!')
+    delete_list = delete_list.replace('-','!')
+    delete_list = delete_list.replace('+','!')
+    if delete_list[-1] == '!':
+        error = True
+    else:
+        try:
+            label_text = str(eval(label_text))
+            output = Label(root, text=str(label_text))
+            output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_equals = True
+            not_breaking_delete = 0
+        except ZeroDivisionError:
+            output = Label(root, text="Can't divide by zero")
+            output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_equals_2 = True
+        except SyntaxError:
+            output = Label(root, text="Can't lead numbers with zero")
+            output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+            not_breaking_equals_2 = True
+
+
 
     
 def delete():
     
     global label_text
     global not_breaking_equals
+    global not_breaking_delete
     delete_list = list(label_text)
-    if len(delete_list) != 0:
+    if not_breaking_equals_2 == True:
+        error = True
+    elif len(delete_list) != 0 and not_breaking_equals == False and not_breaking_delete != 0:
         del delete_list[-1]
+        not_breaking_delete = not_breaking_delete-1
     delete_list = ''.join(delete_list)
     label_text = delete_list
     if str(label_text) == '':
         not_breaking_equals = False
-    output = Label(root, text=str(label_text))
-    output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+    if not_breaking_equals_2 == False and not_breaking_delete != 0:
+        output = Label(root, text=str(label_text))
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_delete = not_breaking_delete-1
 
 
 buttons=Frame(root)
