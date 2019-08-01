@@ -5,7 +5,6 @@ not_breaking_equals = False
 not_breaking_equals_2 = False
 root = Tk()
 
-
 def one():
     
     global label_text
@@ -344,6 +343,7 @@ def delete():
     if not_breaking_equals_2 == False:
         output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
         output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+    not_breaking_equals = False
 
 buttons=Frame(root)
 buttons.grid(columnspan=5, rowspan=5, ipady=200, ipadx=210)
