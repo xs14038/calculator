@@ -406,19 +406,26 @@ def equals():
     global not_breaking_equals_2
     global label_equals
     delete_list = label_equals.split(' ')
-    if delete_list[-1] == '0':
+    if delete_list[-1] == '' and delete_list[0] != delete_list[-1]:
+        label_text = ''.join(delete_list)
+        delete_list = ''.join(delete_list)
+        output = Label(root, text="Missing number after operator", font=("Helvetica", "20"), bg="Gray20", fg="Gray85")
+        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+        not_breaking_equals_2 = True
+    elif delete_list[-1] == '0':
         label_text = ''.join(delete_list)
         delete_list = ''.join(delete_list)
     else:
         delete_list[-1] = delete_list[-1].lstrip('0')
-        if delete_list[-1] == '':
+        if delete_list[-1] == '' and delete_list[0] != '':
             delete_list[-1] = '0'
         label_text = ''.join(delete_list)
         delete_list = ''.join(delete_list)
         label_equals = label_text
+
     if label_text == '':
         error = True
-    elif delete_list[-1] == '-' or delete_list[-1] == '+' or delete_list[-1] == '*' or delete_list[-1] == '/':
+    elif delete_list[-1] == '-' or delete_list[-1] == '+' or delete_list[-1] == '*' or delete_list[-1] == '/' or delete_list[-1] == '.':
         error = True
     else:
         try:
@@ -437,17 +444,16 @@ def delete():
     global label_text
     global not_breaking_equals
     global label_equals
-    delete_list = list(label_text)
     label_equals = list(label_equals)
-    if str(label_equals[-1]) == ' ':
+    if ''.join(label_equals) == '':
+        error = True
+    elif str(label_equals[-1]) == ' ':
         del label_equals[-2]
+        del label_equals[-1]
     elif len(label_equals) != 0:
         del label_equals[-1]
-    if len(delete_list) != 0:
-        del delete_list[-1]
-    delete_list = ''.join(delete_list)
     label_equals = ''.join(label_equals)
-    label_text = delete_list
+    label_text = label_equals
     if str(label_text) == '':
         not_breaking_equals = False
     if not_breaking_equals_2 == False:
