@@ -18,22 +18,15 @@ def one():
     global label_equals
     # list used for an if statement
     delete_list = list(label_text)
-    # in case an error message is on the screen
-    if not_breaking_equals_2 == True:
-        # redefining variables used for the display
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "1")
-        label_equals = str(label_equals + "1")
-        # outputting the display so the user can see the number they inputed
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        # allowing the use of buttons that couldn't be used when the error message was up
-        not_breaking_equals_2 = False
         # If equals was the last button pressed the user cannot enter numbers as there is a number present
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         # so it doesn't expand the application
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                # redefining variables used for the display
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             # redefining variables used for the display
             label_text = str(label_text + "1")
             label_equals = str(label_equals + "1")
@@ -49,16 +42,12 @@ def two():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "2")
-        label_equals = str(label_equals + "2")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "2")
             label_equals = str(label_equals + "2")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -71,16 +60,12 @@ def three():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "3")
-        label_equals = str(label_equals + "3")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "3")
             label_equals = str(label_equals + "3")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -93,16 +78,12 @@ def four():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "4")
-        label_equals = str(label_equals + "4")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "4")
             label_equals = str(label_equals + "4")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -115,16 +96,12 @@ def five():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "5")
-        label_equals = str(label_equals + "5")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "5")
             label_equals = str(label_equals + "5")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -137,16 +114,12 @@ def six():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "6")
-        label_equals = str(label_equals + "6")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "6")
             label_equals = str(label_equals + "6")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -159,16 +132,12 @@ def seven():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "7")
-        label_equals = str(label_equals + "7")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "7")
             label_equals = str(label_equals + "7")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -181,16 +150,12 @@ def eight():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "8")
-        label_equals = str(label_equals + "8")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "8")
             label_equals = str(label_equals + "8")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -203,16 +168,12 @@ def nine():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "9")
-        label_equals = str(label_equals + "9")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "9")
             label_equals = str(label_equals + "9")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
@@ -225,16 +186,12 @@ def zero():
     global not_breaking_equals_2
     global label_equals
     delete_list = list(label_text)
-    if not_breaking_equals_2 == True:
-        label_text = ''
-        label_equals = ''
-        label_text = str(label_text + "0")
-        label_equals = str(label_equals + "0")
-        output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-        output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-        not_breaking_equals_2 = False
-    elif not_breaking_equals == False:
+    if not_breaking_equals == False:
         if len(delete_list) <= 17:
+            if not_breaking_equals_2 == True:
+                label_text = ''
+                label_equals = ''
+                not_breaking_equals_2 = False
             label_text = str(label_text + "0")
             label_equals = str(label_equals + "0")
             output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
