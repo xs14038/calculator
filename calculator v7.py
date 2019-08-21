@@ -450,6 +450,7 @@ def equals():
     global not_breaking_equals_2
     global label_equals
     delete_list = label_equals.split(' ')
+
     # an error message if someone ends with an operator
     if delete_list[-1] == '' and delete_list[0] != delete_list[-1]:
         label_text = ''.join(delete_list)
@@ -469,6 +470,7 @@ def equals():
         delete_list = ''.join(delete_list)
         label_equals = label_text
 
+
     # so you don't get an error by typing nothing
     if label_text == '':
         error = True
@@ -479,9 +481,15 @@ def equals():
         try:
             label_text = str(eval(label_text))
             label_equals = str(eval(label_text))
-            output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
-            output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
-            not_breaking_equals = True
+            # making sure the number doesn't expand the screen
+            if len(label_text) > 17:
+                output = Label(root, text='number to big/small', font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
+                output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+                not_breaking_equals_2 = True
+            else:
+                output = Label(root, text=str(label_text), font=("Helvetica", "30"), bg="Gray20", fg="Gray85")
+                output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
+                not_breaking_equals = True
         except ZeroDivisionError:
             output = Label(root, text="Can't divide by zero", font=("Helvetica", "20"), bg="Gray20", fg="Gray85")
             output.grid(row=0, column=0, columnspan=5, sticky=NSEW)
